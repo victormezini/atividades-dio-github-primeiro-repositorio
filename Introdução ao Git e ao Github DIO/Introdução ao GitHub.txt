@@ -1,0 +1,45 @@
+-Introdução ao GitHub
+
+*Trabalhando com o GitHub
+
+git config --list = traz a lista de todas as configurações no seu git
+
+Mudar o email e nickname do usuario do git:
+git config --global --unset user.nickname
+git config --global --unset user.email
+
+
+comando para enviar o repositorio dos codigos que criou nessa aula para o github:
+git remote add origin https://github.com/victormezini/livro-receitas.git
+
+enviando o arquivo de fato:
+git push origin master
+
+puxando o arquivo do github de volta para a maquina:
+git pull origin master
+
+Comando para clonar um repositorio do GitHub para sua maquina:
+git clone https://github.com/python/cpython.git    <- colocar a url que aparece no site
+
+Comando para mostrar repositorios ocultos:
+ls -a
+
+comando para mostrar os repositorios remotos:
+git remote -v
+
+
+
+- Resolvando conflitos
+
+*Como os conflitos acontecem no GitHub e como resolvê-los
+
+
+
+
+
+
+
+
+
+
+

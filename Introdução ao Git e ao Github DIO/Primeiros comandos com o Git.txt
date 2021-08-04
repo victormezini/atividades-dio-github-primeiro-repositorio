@@ -1,0 +1,71 @@
+- Primeiros comandos com o Git
+
+
+* Iniciando o Git e criando um commit
+
+-iniciar o GIt
+
+iniciar o repositorio do Git: git init
+
+-Iniciar o versionamento
+
+mover arquivos e dar inicio ao versionamento: git add
+
+-Criar um commit
+
+cirar comit: git commit
+
+
+
+Quando se usa o terminal você sempre coloca o nome do programa na fente, por isso que se tem a palavra 
+Git antes do comando.
+
+comando para ver a pasta oculta do git dentro do repositorio: ls -a
+
+
+Arquivo Markdown: É uma forma mais "humana" de se escrever o arquivo html. uma # é igual ao h1 no html
+e assim por diante.
+
+
+
+
+* Passo a passo no ciclo de vida
+
+Os arquivos rastreaveis (Tracked) podem se dividir em três partes diferentes:
+-Unmodified  <- não sofreu modificação
+-Modified    <- sofreu modificação
+-Staged      <- onde fica os arquivos que estão se preparando para fazer parte de outro tipo de agrupamento
+quando o arquivo está em stage e da um commit ele volta para o unmodified
+
+Os arquivos não rastreaveis (Untracked) são os que o git não tem ciencia sobre eles, arquivos que acabaram 
+de ser criados que não sofreu modificação ou foram deletados antes de ser editado.
+
+
+servidor
+[ remote repository ]
+
+ambiente de desenvolvedor
+[ working direvtory ]    - unmodified / modified
+[ staging area ]       - unmodified / modified
+[ local repository ]   - staged
+
+Enquanto estiver editando o arquivo ele vai fazer parte do seu working directory e a parte de
+staging area, a partir do momento que você da um commit ele vai para o repositorio local e pode
+parar no repositorio remoto.
+
+Para ver em qual estado está o arquivo você usa o comando:  git status
+
+Para adicionar um arquivo em staged: git add <arquivo>
+
+Para colocar como unstaged: git restore --staged <arquivo>
+
+Para mover tudo que esta no diretorio de trabalho para o staged: git add *
+
+
+
+
+
+
+
+
+

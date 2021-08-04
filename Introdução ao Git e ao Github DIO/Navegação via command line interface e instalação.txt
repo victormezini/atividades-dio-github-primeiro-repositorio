@@ -1,0 +1,87 @@
+- Navegação via command line interface e instalação
+
+
+* Comandos básicos para um bom desenpenho no terminal.
+
+GUI = Graphic user interface (interface de usuario grafica)
+
+CLI = Comand line interface (interface de linhas de comando)
+
+O que vamos aprender:
+-Mudar de pastas
+
+-Listar as pastas
+
+-Criar pastas/arquivos
+
+-Deletar pastas/arquivos
+
+
+comandos windows e unix:
+
+    WINDOWS
+- cd
+- dir   <- lista de diretorios
+- mkdir  <- criar uma pasta
+- del / rmdir    <- deletar arquivos
+- cls   <- limpa a tela
+- echo  <- printa uma frase ou texto no terminal
+
+     UNIX
+- cd
+- ls   <- lista de diretorios
+- mkdir   <- criar um diretorio / pasta
+- rm -rf   <- deleta o diretorio
+- clear   <- limpa a tela (pode usar o ctrl L)
+- sudo su  <- comando para dar permissão
+
+Para abrir o terminal de comandos do windows = cmd
+
+
+comandos:
+
+dir  <- listar  lista de dretorios na pasta na qual está situado
+
+cd   <- change directory (possibilita que você navegue entre as pastas e é igual para todos os SOs)
+* cd / te leva para a base do diretorio C
+* cd windows vai para o diretorio do windows
+* cd .. retorna para o diretorio anterior
+* cd w + tab  completa o nome do diretorio que você está
+
+cls   <- comando para limpar a tela (clear screen)
+
+mkdir   <- make diractory (cirar uma pasta) 
+
+echo   <- printa de volta no terminal uma frase ou texto
+
+>   <- redireciona o fluxo para um arquivo
+
+del   <- comando para deletar arquivos dentro da pasta
+
+ceta para cima  <- mostra os ultimos comandos digitados
+
+rmdir   <- deleta o diretorio com todos os arquivos dentro
+
+
+
+* Ressaltando as principais diferenças entre os sistemas operacionais
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

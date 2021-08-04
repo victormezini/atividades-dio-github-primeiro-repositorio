@@ -1,0 +1,65 @@
+- O que é o SQL Server?
+
+Por que armazenar dados:
+Precisa armazenar os produtos, informações dos clientes, auterar o estado do produto se for vendido ou 
+alugado
+
+O que é um banco de dados:
+planilha exel se armazenar uma lista de informações. Lugar onde armazena informações. 
+
+O que são SGBDs?
+são softwares que padronizão os bancos de dados, tem uma interface mas você não sabe como os dados são
+armazenados, poder colocar usuarios com níveis de acesso.
+
+Tipos de bancos de dados:
+
+- Relacionais    <- são para sistemas que precisam de uma confiabilidade grande
+* SQL Server
+* Oracle
+* MySQL
+
+- NoSQL         <- (BIGDADA) voltados para uma melhor performace, armazenam grandes quantidades de dados de forma rapida
+* MongoDB           são bons para armazenar videos e fotos, bom para integração para mobile
+* Noe4J
+* Firebase
+
+As aulas vão ser sobre bancos de dados RELACIONAIS
+
+
+- Representação de um banco de dados relacional e consistência de dados.
+
+vendas se relacionam com clientes e produtos
+
+exemplo do que tem na planilha:
+id: int       inteiro
+nome: varchar  alfa numericos
+cpf: char      alfa númericos
+ativo: bit     zero ou um (falso ou verdadeiro)
+
+
+Atomicidade: não da para cadastrar uma venda para um cliente que não existe ou produto que não existe.
+garante que todos os dados estão corretos para colocar dentro da tabela. tem muita confiabilidade.
+
+Consistência de dados:
+Se tiver mais de um banco de dados e for adicionado um produto, então quando ouver uma venda o sistema
+vai esperar a informação ser persistida, esperar que a informação do produto que entrou estar em 
+todos os bancos de dados da loja. Garante que o dado está igual em todos os bancos de dados da loja,
+garante uma boa consistência.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

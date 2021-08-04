@@ -1,0 +1,109 @@
+Conceitos iniciais sobre estruturas de dados, arrays e registor
+
+
+- Aprendendo o que são estrutura de dados e algoritmos
+
+O que é estrutura de dados:
+"Estrutura de dados é uma estrutura organizada de dados na memória de um computador ou em qualquer
+dispositivo de armazenamento, de forma que os dados passem ser utilizados de forma correta"
+
+"Essas estruturas encontram muitas aplicações no desenvolvimento de sistemas, sendo que algumas são
+ altamente especializadas e utilizadas em tarefas especificas.
+Usando as estruturas adequadas através de algoritmos, podemos trabalhar com uma grande quantidade
+de dados, como aplicação em banco de dados ou serviços de busca."
+
+Algoritmo: 
+"Um algoritmo é um conjunto de instruções estruturadas e ordenadas, seu objetivo é realizar uma tarefa ou operação
+especifica
+Os algoritmos são utilizadas para manipular dados nas estruturas de várias formas, como por exemplo:
+inserir excluir, procurar e ordenar dados."
+
+"Em estrutura de dados devemos saber como realizar um determonado conjunto de operações básicas, como
+por exemplo:
+-inserir dados
+-excluir dados
+-localizar um elemento
+-percorrer todos os intens constituentes da estrutura para vizualiação
+-classificar, que se resume em colocar os intens de dados em uma determinada ordem (numérica, alfabética, etc.)"
+
+- Principais estruturas de dados:
+* Vetores e Matrizes (Arrays)
+* Registro
+* Lista
+* Pilha
+* Fila
+* Árvore
+* Tabela Hash
+* Grafos
+
+- Sobre vetores e matrizes (arrays):
+"Vetores e Matrizes ou Arrays são estruturas de dados simples que podem auxiliar quando há muitas variáveis
+do mesmo tipo em um algoritmo."
+
+"vetor ou array uni-dimensional é uma váriavel que armazena várias variáveis de mesmo tipo.
+O vetor é uma estrutura de dados indexada, que pode armazenar uma determinada quantidade de valores 
+do mesmo tipo"
+
+Matriz:
+Matriz ou array multi-dimensional é um vetor de vetores
+uma matriz é um vetor que possui duas ou mais dimensóes
+
+
+Registro:
+"Um registro é uma estrutura que fornece um formato especializado para armazenar informações em memória."
+
+Um registro é composto por campos que especificam cada uma das informações que o compões
+
+Abaixo podemos ver alguns campos de exemplo que constituem o registro de um cliente:
+CPF:
+Nome
+Endereço:
+Contato:
+
+
+Toda estrutura de registro tem um nome (ex: livro), e seus campos podem ser acessados por meio do uso do 
+operador ponto (.). Por exemplo, para acessar o preço de um livro, poderiamos utilizar a seguinte
+declaração:
+livro.preço
+
+exemplo de algoritmo:
+
+//declaração do tipo de dado
+tipo
+   estrutura_livro = registro
+      nome :caracter
+      preço :real
+      pagina: inteiro
+   fimregistro
+
+//declaração das variáveis
+   i inteiro
+   livro array[1..3] de estrutura_livro
+
+   Escreva("Entre com os nomes, preço e número de paginas de três livros")
+   para i de 1 ate 3 faca     //leitura dos dados
+      leia(livro[i].nome, livro[i].preço, livro[i].paginas)
+   fimpara
+FIMALGORITMO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

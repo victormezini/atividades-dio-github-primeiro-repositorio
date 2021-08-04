@@ -1,0 +1,25 @@
+*Introdução ao Git 
+
+- Entendendo o que é Git e sua importância
+GitHub ajuda a que outras pessoas vejam seu código para ver se tem pequenos erros e darem dicas
+ 
+É um Software de versionamento de código
+
+Quem criou o Git: Linus Torvalds
+
+GitHub é uma epmresa da Microsoft
+
+Git e GitHub não são a mesma coisa e são tecnologias totalmente diferentes
+
+GitHub é um repositorio online onde se armazena os códigos
+
+Beneficios de aprender sobre o git e github
+-controle de versão
+-armazenamento em nuvem
+-trabalho em equipe
+-melhorar seu código
+-reconhecimento
+
+GitHub é como uma rede social onde você pod ereceber reconhecimento pelo seu código
+
+

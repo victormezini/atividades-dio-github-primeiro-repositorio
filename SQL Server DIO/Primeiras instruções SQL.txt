@@ -1,0 +1,104 @@
+- Primeiras instruções SQL
+
+* Comando insert, select, update, delete
+* Especificidades do comando select
+
+se selecionar a tabela e clicar ALt f1 você consegue ver mais informações sobre a tabela.
+
+ponto e virgula indica que é o final de uma instrução (;)
+
+> Exemplo de comando insert:
+insert into clientes (codigo, nome, TipoPessoa) values (1, 'Victor', 'F');
+
+> Exemplos de select:
+select * from clientes      <- pesquisa tudo na tabela clientes
+select nome from clientes    <- pesquisa só os nomes da tabela clientes
+select * from clientes where TipoPessoa = 'j'       <- pesquisa tudo na tabela onde o tipopessoa for J
+
+> Exemplos de update:
+update Clientes set Codigo = 7, Nome = 'Jose' where TipoPessoa = 'J'    <- vai atualizar a tabela onde
+o tipopessoa for j e colocar o codigo 7 e nome jose
+
+> Exemplo de delete:
+delete from Clientes where Codigo in(5,4,3)
+
+or e and:
+v and v = v
+v and f = f
+f and v = f
+f and f = f
+
+v or v = v
+v or f = v
+f or v = v
+f or f = f 
+
+
+> Exemplo de case when:
+select *,
+       case
+	       when TipoPessoa = 'j' then 'Jurídica'
+	       when TipoPessoa = 'f' then 'Física'
+		   else 'Pessoa indefinida'
+		end
+from Cliente
+
+
+> Exemplo de função de converção:
+select *, convert(varchar, DataSolicitacao)
+from Pedido
+
+
+
+virgula (,) separa campos e ponto (.) separa os números inteiros dos seus decimais.
+
+Mais (+) pode ser tanto para somar numeros quanto para concatenar strings
+
+contraint define uma regra para a tabela
+
+
+
+
+- Normalizando dados:
+
+
+* O que são chaves primárias e estrangeiras
+
+
+ - Chave primaria (PK): 
+É uma forma de indentificar um registro, uma chave que tem que ser unica para aquele registro
+e gera uma melhor performace na busca pois vai indexar os registros
+pode ser unica ou composta
+
+> Exemplo de como definir uma chave primaria:
+alter table Clientes add constraint pk_cliente primary key (codigo)
+
+
+
+ - Chave estrangeira (FK):
+vai fazer relação de uma tabela com outra tabela
+Só pode ser uma chave estrangeira se ela estiver apontando para uma chave primaria
+Uma chave estrangeira sempre será uma cópia de uma chave primaria de mesmo tipo e quantidade, umma 
+sempre se referência a outra.
+
+> Exemplo de referênciar uma chave estrageira a uma primaria:
+alter table PedidoItem add constraint fk_pedido foreing key (CodigoPedido) references Pedido (Codigo)
+
+
+
+* As fases de normalização de dados
+
+A normalização tem 3 passos:
+1= Não deve haver um conjunto de colunas repitidos ou um conjunto de informações em apenas uma propriedade
+
+
+
+
+
+
+
+
+
+
+
+

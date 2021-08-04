@@ -1,0 +1,169 @@
+Introduçáo ao portugol
+
+- Aprendendo como utilizar uma estrutura de repetição:
+
+Estrutura de repetição: Dentro da lógica de programação é uma estrutura que permite executar mais de 
+uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador.
+
+- O que são linguagens de programação:
+
+O que são linguagens de programação: "Linguagem de programação é uma linguagem escrita e formal que
+especifica um conjunto de instruções e regras usadas para gerar programas (softwares). Um software
+pode ser desenvolvido para rodar em um computador, dispositivo móvel ou em qualquer equipamento que 
+permita sua execução"
+
+"O que é óbvio para você, certamente não é óbvio para uma máquina. E se você quer que a máquina faça
+algo para você, você precisa,"falar com ela"".
+
+A função das linguagens de programação é servir de um meio de comunicação entre computadores e humanos
+
+Tipos de linguagem:
+
+Alto nível: Essas são aquelas cuja sintaxe se aproxima mais da nossa linguagem e se distanciam mais da
+linguagem de máquina.
+
+Baixo nível: É aquela que se aproxima mais da linguagem de máquina. Essas são as que você precisa ter 
+o conhecimento direto da arquitetura do computador para fazer alguma coisa.
+
+Compiladas ou interpretadas:
+
+Compiladas: É uma linguagem de programação em que o código fonte, é executado diretamente pelos sistemas
+operacionais ou pelo processador, após ser traduzido por meio de um processo chamado compilação.
+
+Interpretadas: É uma linguagem de programação em que o código fonte é executado por um programa de 
+computador, que em seguida é executado pelo sistema ou processador.
+
+
+O que é Portugol?: "Portugol é uma pseudolinguagem que permite ao leitor desenvolver algoritmo 
+estruturados em português de forma simples e intuitiva, independente de linguagem de programação"
+
+"É uma pseudolinguagem que permite ao programador pensar no problema em si e não no equipamento
+que irá executar o algoritmo."
+
+
+- Desvios condicionais e comentários - Portugol:
+
+
+Desvio condicional "SE":
+
+Utilização: "É utilizada a palavra SE, a condiçãoa ser testada entre parenteses e as instruções que
+devem ser executadas entre chaves caso o desvio seja VERDADEIRO"
+
+exemplo:
+se(media>=7){
+   escreva("Parabéns!! Você foi aprovado!!")
+}
+
+
+SE-SENAO:
+Agora vamos imaginar que se a condição for falsa um outro conjunto de comandos deve ser executado.
+Quando iremos encontrar esta situação?
+
+se(media>=7){
+   escreva("Parabéns!! Você foi aprovado!!")
+}
+senao{
+   escreva("Infelizmente você foi reprovado")
+}
+
+
+Desvio condicional "CASO":
+Este comando é similar aos comandos se e senão, e reduz a complexidade na escolha de diversas opções.
+Apesar de suas similaridades com o se, ele possui algumas diferenças. Neste comando não é possível o 
+uso de operadores lógicos, ele apenas trabalha com valores definidos.
+
+exemplo de CASO:
+
+inteiro valor=0
+escolha(valor)
+{
+caso 1:   //testa se o valor é igual a 1
+escreva ("OK!! Abrir Netflix!!")
+pare
+caso 2:   //testa se o valor é igual a 2
+escreva ("OK!! Abrir Amazon Prime!!")
+pare
+caso 3:   //testa se o valor é igual a 3
+escreva ("OK!! Abrir HBO GO!!")
+pare
+caso contrario
+escreva ("Você deve escolher as opções 1, 2 ou 3")
+}
+
+
+- Laços de repetição - Portugol:
+Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando
+ou conjunto de comandos, de acordo com uma condição ou com um contador.
+
+ex:
+
+funcao inicio()
+{
+   inteiro contador,limite,resultado
+   contador = 0
+   limite = 10
+   faca
+   {
+      resultado = 9 * contador
+      escreva ("9 x " + contador + "=" + resultado + "\n")
+      contador ++
+   }enquanto (contador<=limite)
+}
+
+
+- Matrizes e vetores:
+
+
+Matriz: Uma matriz é uma coleção de variáveis de mesmo tipo, acessível com um único nome e armazenados
+contiguamente na memória.
+
+A individualização de cada variável de um vetor é feita através do uso de ÍNDICES.
+
+Vetores: Os VETORES são matrizes de uma só dimensão
+
+ex:
+
+cadeia Vetor[5]:  // declara um vetor de 5 posições
+cadeia Matriz[5][3]:   //declara uma matriz de 5 linhas e 3 colunas
+
+cadeia frutas[4]:
+frutas[0] = "Maçã"
+frutas[1] = "pera"
+frutas[2] = "Uva"
+frutas[3] = "Melão"
+escreva(frutas[2])
+
+cadeia cesta[][] = {{"Maçã","100"},{"Pera","200"},{"Melão","300"}}
+
+escreva("Fruta: " + cesta[][] + "Quantidade: " + cesta[0][1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

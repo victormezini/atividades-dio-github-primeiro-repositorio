@@ -1,0 +1,85 @@
+- Istalando o SQL Server
+
+* Instalação do SQL Server 2019 Express Edition
+
+Só o SQL server sozinho a leitura de muitas informações fica um pouco ruim e precisa de outra ferramenta
+
+Informações do meu SQL:
+
+Nome da instância SQLExpress: Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+
+Comandos:
+go: escrever depois do comando para ver o resultado do comando
+
+select getdate(): mostra a data e hora do servidor
+
+use master: altera para o banco de dados master
+
+select * from sys.tables: mostra todas as tabelas do servidor master
+
+*: seleciona tudo
+
+use master: muda de tabela para a tabela master (só trocar o master pelo nome da tabela que quer).
+
+create databese: cria um novo banco de dados
+
+create table teste: cria uma nova tabela chamada teste (só mudar o nome teste pelo nome da tabela que quer)
+
+( ): cria a coluna da tabela
+ex:   create table Teste
+      (
+          Descricao varchar(50) null,
+          Complemento char(10) not null
+      )
+
+insert Teste values('a', 'a'): insere dados a, a
+
+drop table Teste: vai apagar a tabela Teste
+
+
+
+
+SQL é um serviço que fica rodando no sistema operacional
+
+
+SQL Server Management Studio (SSMS):
+É um ambiente integrado para gerenciar qualquer infraestrutura de SQL, do SQL Server para o Banco de 
+Dados SQL do Azure. O SSMS fornece ferramentas para configurar, monitorar e administrar instâncias
+do SQL Server e bancos de dados. Use o SSMS para implantar, monitorar e atualizar os componentes da
+camada de dados usados pelos seus aplicativos, além de criar consultas e scripts.
+Use o SSMS para consultar, criar e gerenciar seus bancos de dados e data warehouse, independente de 
+onde estiverem - no computador local ou na nuvem.
+
+
+Cada linha é um registro e cada tem suas informações
+
+
+
+- Conceitos iniciais de criação de tabelas:
+
+
+
+Bancos relacionais são bancos altamente tipados, cada tabela vai possuir um tipo.
+
+
+int: números inteiros ou negativos
+
+bigint: números inteiros maiores ex: armazenar cpf no formato númerico
+
+varchar(10): sempre tem que indicar um tamanho para essa coluna, tem limite de 4 mil, aceita alfa numericos  
+o varchar guarda somente a informação que for digitada
+
+char(10): aceita alfa numericos, se tiver com 10 espaços e digitar só uma letra então ele joga 9 espaços
+vazios para completar.
+
+bit: 0 ou 1 (sim ou não)
+
+float: aceita ponto flutuante, aceita casas decimais
+
+null: aceita nulos (coluna sem precisar sem preenchidas) ausencia de valor
+
+not null: não aceita nulos
+
+
+

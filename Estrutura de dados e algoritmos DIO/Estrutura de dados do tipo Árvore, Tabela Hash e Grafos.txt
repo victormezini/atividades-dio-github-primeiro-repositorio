@@ -1,0 +1,56 @@
+- Estrutura de dados do tipo Árvore, Tabela Hash e Grafos
+
+
+*O que sãoárvores
+
+-Arvore:
+É uma estrutura de dados que organiza seus elementos de forma hierárquica, onde existe um elemento que
+fica no topo da árvore,chamado de raiz e existem os elementos subordinados a ele, que são chamados de 
+nós ou folhas.
+
+Fluxo de pesquisa da arvore: raiz - sub arvores - folhas
+
+
+*O que são tabelas hash
+
+- Tabela Hash (Tabela de Espalhamento):
+Uma tabela hash, de dispersão ou espalhamento é uma estrutura de dados especial, que associa chaves de 
+pesquisa a valores.
+
+Uma tabela hash é uma generalização da idéia de array, porém utiliza uma função denominada Hashing 
+para espalhar os elementos, fazendo com que os mesmos fiquem de forma não ordenada dentro do "array"
+que define a tabela.
+
+Os elementos são espalhados de forma não ordenada
+
+A tabela hash permite a associação de "valores" a "chaves"
+
+Valores: É a posição ou índice onde o elemento se encontra
+
+Chave: Parte da informação que compõe o elemento a ser manipulado
+
+Espalhar facilita a busca na estrutura de dados, pois a partir de uma chave podems acessar de forma
+rápida uma posição do "array".
+
+
+*O que são grafos
+
+-Grafo:
+Grafos são estruturas que permitem programar a relção entre objetos.
+
+Os objetos são vértices ou "nós" do grafo.
+
+Os relacionamentos são arestas.
+
+
+
+
+
+
+
+
+
+
+
+
+

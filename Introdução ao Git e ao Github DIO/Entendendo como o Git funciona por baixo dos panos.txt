@@ -1,0 +1,52 @@
+- Entendendo como o Git funciona por baixo dos panos
+
+* Tópicos fundamentais para entender o funcionamento do Git
+
+Nessa aula:
+-SHA1
+
+A sigla SHA significa Secure Hash Algorithm (Algoritmo de Hash Seguro), é um conjunto de funções hash
+criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA). Ele vai pegar seu arquivo e 
+embaralhar.
+A encriptação gera conjunto de characteres indentificador de 40 dígitos.
+É uma forma curta de representar um arquivo
+Sempre que roda esse arquivo ele traz uma chave diferente.
+ex: echo "ola mundo" | openssl sha1
+A cada mudança no arquivo ele gera um novo código
+
+45f11a44ebb02ad1ef2a47b9643f2f3dc0e66137
+
+-Objetos fundamentais
+
+se mudar uma virgula vc muda toda sua estrutura 
+
+BLOBS  <- echo 'conteudo' | git hash-object --stdin
+echo -e 'blob' 9\0conteudo' | openss1 sha1
+possui o tipo de objeto / tamanho / o conteudo
+contem metadados do arquivo
+não guarda o nome do arquivo
+tem um sha 1 do arquivo
+(arquivo)
+
+TREES
+As trees armazenam blobs e contem metadados tbm e o nome do arquivo
+monta toda a estrutura de onde esta guardado esse arquivo
+pode apontar para outra arvore
+possui um sha1 do metadado
+contem o README Rakefile lib blob tree simplegit.rb
+(pasta)
+
+COMMITS
+
+junta tudo e da sentido para a alteração que vc está fazendo
+ele aponta para a tree, parente, autor, mensagem, timestamp (carimbo de tempo)
+tambem possui um sha1
+uma vez que altera um arquivo vc altera toda a estrutura do commit
+
+-Sistemas distribuidos
+
+vc tem seu codigo hosteado no servidor que possui a versão mais recente com varias pessoas que mantem 
+o codigo, varias pessoas vão ter as versões do codigo
+
+-Segurança
+

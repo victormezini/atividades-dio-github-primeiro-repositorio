@@ -1,0 +1,72 @@
+- Trabalhando com tabelas relacionadas
+
+
+* Introdução ao comando join
+
+O comando join serve para fazer uma consulta entre várias tabelas em conjunto.
+Uma clausula join em sql, corresponde a uma operação de junção em álgebra relacional, combina duas
+colunas de uma ou mais tabelas em um banco de dados relacional. Ela cria um conjunto que pode ser 
+salvo como uma tabela ou usado da forma que está.
+
+O SQL padrão ANSI especifica cinco tipos de join:
+
+-> inner join
+
+(compara cada linha da tabela A com as linhas da tabela B para encontrar todos os pares de linhas que
+satisfazem a condição de junção. Se a condição de junção for avaliada como TRUE, os valores da coluna
+das linhas correspondentes das tabelas A e B serão combinados em uma nova linha e incluídos no conjunto
+de resultados).
+
+
+-> left join
+
+(retorna todos os registros da tabela esquerda e os registros correspondentes ou valores NULL da 
+tabela direita).
+
+
+-> right join
+
+(retorna todos os registros da tabela direita e os registros correspondentes da tabela esquerda)
+
+
+-> full join
+
+(retorna todos os registros quando houver uma correspondencia na tabela esquerda ou direita)
+
+
+-> cross join
+
+(a cláusula cross join retorna todas as linhas das tabelas por cruzamento, ou seja, para cada linha da 
+tabela esquerda queremos todos as linhas da tabelas direita ou vice-versa. Ele também é chamado de 
+produto cartesiano entre duas tabelas. Porém, para isso é preciso que ambas tenham o campo em comum,
+para que a ligação exista entre as duas tabelas).
+
+
+
+
+* Aprofundando nos comandos join e group by.
+
+avg: tira a média
+
+sum: soma
+
+count: conta
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
